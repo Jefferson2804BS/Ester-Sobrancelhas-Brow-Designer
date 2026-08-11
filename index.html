@@ -1,248 +1,330 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ester Sobrancelhas · Studio de Beleza & Design de Sobrancelhas</title>
-<meta name="description" content="Studio especializado em design de sobrancelhas, cílios, lábios e cuidados faciais em Santa Isabel, SP. Agende online pelo WhatsApp.">
-<link rel="icon" type="image/x-icon" href="imagem/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ester Sobrancelhas · Studio de Beleza & Design de Sobrancelhas</title>
+  <meta name="description"
+    content="Studio especializado em design de sobrancelhas, cílios, lábios e cuidados faciais em Santa Isabel, SP. Agende online pelo WhatsApp.">
+  <link rel="icon" type="image/x-icon" href="imagem/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=DM+Sans:wght@300;400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- NAV -->
-<nav id="nav" role="navigation" aria-label="Navegação principal">
-  <a href="index.html" class="nav-brand"><div class="nav-brand-icon"></div></a>
-  <a href="index.html" class="nav-brand">Ester Sobrancelhas</a>
-  <a href="https://wa.me/5511995281516?text=Ol%C3%A1%2C%20Ester%21%20Encontrei%20seu%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio.%20Pode%20me%20informar%20as%20datas%20dispon%C3%ADveis%3F" class="nav-cta" target="_blank" rel="noopener">Agendar agora</a>
-  <button class="hamburger" aria-label="Abrir menu" id="hamburger-btn">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true">
-  <button class="menu-close" id="menu-close" aria-label="Fechar menu">&#215;</button>
-  <a href="#hero" onclick="closeMobileMenu()">Inicio</a>
-  <a href="procedimentos.html" onclick="closeMobileMenu()">Procedimentos</a>
-  <a href="produtos.html" onclick="closeMobileMenu()">Produtos</a>
-  <a href="#contatos" onclick="closeMobileMenu()">Contatos</a>
-  <a href="https://online.maapp.com.br/studiopratabeauty" target="_blank" rel="noopener" onclick="closeMobileMenu()">Agendar agora</a>
-</div>
-
-<!-- HERO -->
-<section id="hero" aria-label="Apresentação">
-  <div class="hero-photo"></div>
-  <div class="hero-scrim"></div>
-
-
-  <div class="hero-content">
-    <h1 class="hero-h1">Esteja pronta,<br>para as oportunidades.</h1>
-    <p class="hero-sub">Design de sobrancelhas, cílios, lábios e cuidados faciais — tratamentos pensados para realçar a sua beleza natural, com técnica e cuidado em cada detalhe.</p>
-    <div class="hero-cta-group">
-      <a href="procedimentos.html" class="btn-outline">
-        <span>Ver procedimentos e agendar</span>
-      </a>
-      <span class="hero-micro">Escolha o seu procedimento · Confirme em segundos pelo WhatsApp</span>
-    </div>
-  </div>
-
-</section>
-
-<div class="section-divider"></div>
-
-<!-- EXPERIÊNCIA -->
-<section id="experiencia" aria-label="Experiência e protocolos">
-  <div class="section-inner exp-grid">
-    <div class="exp-photo reveal">
-      <div class="photo-wrap-small">
-        <div class="photo-placeholder2">
-        </div>
-      </div>
-    </div>
-    <div class="exp-text">
-      <span class="label-line reveal"></span>
-      <span class="label reveal from-left">Experiência &amp; Protocolos de Atendimento</span>
-      <h2 class="reveal" style="margin-top:16px;">Em nosso espaço,<br>o foco é a sua experiência.</h2>
-      <div class="exp-items">
-        <div class="exp-item reveal">
-          <div class="pain-dash"></div>
-          <p class="pain-text">Agende com antecedência para garantir o seu melhor horário.</p>
-        </div>
-        <div class="exp-item reveal">
-          <div class="pain-dash"></div>
-          <p class="pain-text">O seu bem-estar é uma prioridade. Priorize o seu procedimento.</p>
-        </div>
-        <div class="butterfly-divider" aria-hidden="true">
-          <svg width="44" height="32" viewBox="0 0 44 32" fill="none"><path d="M22 16 C18 8 6 2 2 8 C-2 14 8 20 22 16Z" stroke="#8B5C3A" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 16 C26 8 38 2 42 8 C46 14 36 20 22 16Z" stroke="#8B5C3A" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 16 C18 20 8 24 6 20 C4 16 12 18 22 16Z" stroke="#8B5C3A" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 16 C26 20 36 24 38 20 C40 16 32 18 22 16Z" stroke="#8B5C3A" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="22" y1="14" x2="20" y2="10" stroke="#8B5C3A" stroke-width="0.8"/><line x1="22" y1="14" x2="24" y2="10" stroke="#8B5C3A" stroke-width="0.8"/></svg>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- PROCEDIMENTOS EM DESTAQUE -->
-<section id="destaques" aria-label="Procedimentos em destaque">
-  <div class="section-inner">
-    <span class="label-line reveal"></span>
-    <span class="label reveal from-left">O que você pode agendar</span>
-    <h2 class="reveal" style="margin-top:16px;">Alguns dos nossos favoritos</h2>
-
-    <div class="featured-grid">
-      <div class="featured-card reveal">
-        <div class="foto1"></div>
-        <div class="featured-body">
-          <h3>Design Beauty Personalizado</h3>
-          <p>Técnica perfeita para manter o olhar elegante e delicado, realçando a sua beleza natural.</p>
-          <span class="featured-price">R$ 40,00</span>
-        </div>
-      </div>
-      <div class="featured-card reveal">
-        <div class="foto5"></div>
-        <div class="featured-body">
-          <h3>Lash Lifting</h3>
-          <p>Cílios curvados e levantados, proporcionando um efeito delicado e prático para o dia a dia.</p>
-          <span class="featured-price">R$ 120,00</span>
-        </div>
-      </div>
-      <div class="featured-card reveal">
-        <div class="foto4"></div>
-        <div class="featured-body">
-          <h3>Brow Lamination</h3>
-          <p>Para quem gosta do efeito up nas sobrancelhas. Volumosas, alinhadas e com resultado natural.</p>
-          <span class="featured-price">R$ 110,00</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="featured-cta">
-      <a href="procedimentos.html" class="btn-outline">
-        <span>Ver todos os procedimentos</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- PAGAMENTO -->
-<section id="pagamento" aria-label="Formas de pagamento">
-  <div class="section-inner narrow" style="text-align:center;">
-    <span class="label-line reveal" style="margin:0 auto 14px;"></span>
-    <span class="label reveal">Formas de Pagamento</span>
-    <h2 class="reveal" style="margin-top:16px;">Dinheiro, Cartões e Pix.</h2>
-    <div class="pagamento-grid">
-      <div class="pagamento-item reveal">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B5C3A" stroke-width="1.2" stroke-linecap="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
-        <p class="pagamento-label">Cartão</p>
-        <p class="pagamento-desc">Débito e crédito. Uma pequena taxa da maquininha pode ser aplicada — você pode pedir para simular antes.</p>
-      </div>
-      <div class="pagamento-item reveal">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B5C3A" stroke-width="1.2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-        <p class="pagamento-label">Pix</p>
-        <p class="pagamento-desc">CNPJ: 59.455.166/0001-45<br>Ester Prata Bastos Soares</p>
-      </div>
-      <div class="pagamento-item reveal">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B5C3A" stroke-width="1.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        <p class="pagamento-label">Dinheiro</p>
-        <p class="pagamento-desc">Pagamento em espécie aceito para todos os procedimentos e produtos.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- LOCAL -->
-<section id="local" aria-label="Localização">
-  <div class="section-inner">
-    <span class="label-line reveal"></span>
-    <h2 class="reveal" style="margin-top:16px;">Localização</h2><br>
-  <div class="maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7327.778286820492!2d-46.2282361!3d-23.319780599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce81c787e8cd05%3A0xef1b0789de13d46d!2sAv.%20da%20Republica%2C%20386A%20-%20Jardim%20Monte%20Serrat%2C%20Santa%20Isabel%20-%20SP%2C%2007500-000!5e0!3m2!1spt-BR!2sbr!4v1782431516575!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- FOOTER -->
-<footer id="contatos">
-  <div class="footer-inner">
-    <div>
-      <span class="footer-brand-name">Ester Sobrancelhas</span>
-      <span class="footer-sub">Brow Design · Santa Isabel, SP</span>
-    </div>
-    <div class="footer-nav">
-      <span class="footer-nav-title">Navegação</span>
-      <a href="index.html">Início</a>
-      <a href="procedimentos.html">Procedimentos</a>
-      <a href="produtos.html">Produtos</a>
-      <a href="#contatos">Contatos</a>
-    </div>
-    <div>
-      <a href="https://maps.app.goo.gl/1htjmqjbZmZFP3qn6?g_st=ic" class="footer-address" target="_blank" rel="noopener">
-        Av. da República, 386 A<br>Centro · Santa Isabel, SP
-      </a>
-    </div>
-    <div class="footer-social">
-      <a href="https://www.instagram.com/estersobrancelhaas?igsh=am1hY3pqaXh1bGdt&utm_source=qr" class="footer-ig-link" target="_blank" rel="noopener" aria-label="Instagram da Ester Sobrancelhas">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#8B5C3A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="#8B5C3A" stroke="none"/></svg>
-        <span class="footer-ig-handle">@estersobrancelhaas</span>
-      </a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; <span id="ano"></span> Ester Sobrancelhas | Todos os direitos reservados</p>
-
-<script>
-  document.getElementById('ano').textContent = new Date().getFullYear();
-</script></div>
-</footer>
-
-<!-- FLOATING WHATSAPP -->
-<div id="whatsapp-float" aria-label="Agendar via WhatsApp">
-  <a href="https://wa.me/5511995281516?text=Ol%C3%A1%2C%20Ester%21%20Encontrei%20seu%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
-    <div class="wa-pulse-ring"></div>
-    <span class="wa-tooltip">Agendar via WhatsApp</span>
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="#F5F1EC" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
-</div>
-
-<!-- CARRINHO -->
-<div id="cart-float" aria-label="Carrinho de agendamento">
-  <button id="cart-btn" aria-label="Abrir carrinho de agendamento">
-    <svg viewBox="0 0 24 24" fill="none" stroke="#F5F1EC" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-    <span class="cart-count" id="cart-count">0</span>
-  </button>
-</div>
-
-<div class="cart-overlay" id="cart-overlay"></div>
-<div class="cart-panel" id="cart-panel" role="dialog" aria-modal="true" aria-label="Seu carrinho de agendamento">
-  <div class="cart-panel-header">
-    <h3>Seu Agendamento</h3>
-    <button id="cart-close" aria-label="Fechar carrinho">&#215;</button>
-  </div>
-  <div class="cart-items" id="cart-items">
-    <p class="cart-empty">Seu carrinho está vazio.<br>Adicione procedimentos ou produtos para agendar.</p>
-  </div>
-  <div class="cart-footer">
-    <div class="cart-total-row">
-      <span>Total estimado</span>
-      <span id="cart-total">R$ 0,00</span>
-    </div>
-    <a href="procedimentos.html" class="btn-outline" style="text-align:center;">
-      <span>Ver procedimentos</span>
+  <!-- NAV -->
+  <nav id="nav" role="navigation" aria-label="Navegação principal">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-brand-icon"></div>
     </a>
-    <button id="cart-finish" class="btn-filled">Finalizar Agendamento</button>
-  </div>
-</div>
+    <a href="index.html" class="nav-brand">Ester Sobrancelhas</a>
+    <a href="https://wa.me/5511995281516?text=Ol%C3%A1%2C%20Ester%21%20Encontrei%20seu%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio.%20Pode%20me%20informar%20as%20datas%20dispon%C3%ADveis%3F"
+      class="nav-cta" target="_blank" rel="noopener">Agendar agora</a>
+    <button class="hamburger" aria-label="Abrir menu" id="hamburger-btn">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-<script src="script.js"></script>
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true">
+    <button class="menu-close" id="menu-close" aria-label="Fechar menu">&#215;</button>
+    <a href="#hero" onclick="closeMobileMenu()">Inicio</a>
+    <a href="procedimentos.html" onclick="closeMobileMenu()">Procedimentos</a>
+    <a href="produtos.html" onclick="closeMobileMenu()">Produtos</a>
+    <a href="#contatos" onclick="closeMobileMenu()">Contatos</a>
+    <a href="https://online.maapp.com.br/studiopratabeauty" target="_blank" rel="noopener"
+      onclick="closeMobileMenu()">Agendar agora</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero" aria-label="Apresentação">
+    <div class="hero-photo"></div>
+    <div class="hero-scrim"></div>
+
+
+    <div class="hero-content">
+      <h1 class="hero-h1">Esteja pronta,<br>para as oportunidades.</h1>
+      <p class="hero-sub">Design de sobrancelhas, cílios, lábios e cuidados faciais — tratamentos pensados para realçar
+        a sua beleza natural, com técnica e cuidado em cada detalhe.</p>
+      <div class="hero-cta-group">
+        <a href="procedimentos.html" class="btn-outline">
+          <span>Ver procedimentos e agendar</span>
+        </a>
+        <span class="hero-micro">Escolha o seu procedimento · Confirme em segundos pelo WhatsApp</span>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- EXPERIÊNCIA -->
+  <section id="experiencia" aria-label="Experiência e protocolos">
+    <div class="section-inner exp-grid">
+      <div class="exp-photo reveal">
+        <div class="photo-wrap-small">
+          <div class="photo-placeholder2">
+          </div>
+        </div>
+      </div>
+      <div class="exp-text">
+        <span class="label-line reveal"></span>
+        <span class="label reveal from-left">Experiência &amp; Protocolos de Atendimento</span>
+        <h2 class="reveal" style="margin-top:10px;">Em nosso espaço,<br>o foco é a sua experiência.</h2>
+        <div class="exp-items">
+          <div class="exp-item reveal">
+            <div class="pain-dash"></div>
+            <p class="pain-text">Agende com antecedência para garantir o seu melhor horário.</p>
+          </div>
+          <div class="exp-item reveal">
+            <div class="pain-dash"></div>
+            <p class="pain-text">O seu bem-estar é uma prioridade. Priorize o seu procedimento.</p>
+          </div>
+          <div class="butterfly-divider" aria-hidden="true">
+            <svg width="44" height="32" viewBox="0 0 44 32" fill="none">
+              <path d="M22 16 C18 8 6 2 2 8 C-2 14 8 20 22 16Z" stroke="#8B5C3A" stroke-width="1" fill="none"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M22 16 C26 8 38 2 42 8 C46 14 36 20 22 16Z" stroke="#8B5C3A" stroke-width="1" fill="none"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M22 16 C18 20 8 24 6 20 C4 16 12 18 22 16Z" stroke="#8B5C3A" stroke-width="1" fill="none"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M22 16 C26 20 36 24 38 20 C40 16 32 18 22 16Z" stroke="#8B5C3A" stroke-width="1" fill="none"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <line x1="22" y1="14" x2="20" y2="10" stroke="#8B5C3A" stroke-width="0.8" />
+              <line x1="22" y1="14" x2="24" y2="10" stroke="#8B5C3A" stroke-width="0.8" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- PROCEDIMENTOS EM DESTAQUE -->
+  <section id="destaques" aria-label="Procedimentos em destaque">
+    <div class="section-inner">
+      <span class="label-line reveal"></span>
+      <span class="label reveal from-left">O que você pode agendar</span>
+      <h2 class="reveal" style="margin-top:16px;">Alguns dos nossos favoritos</h2>
+
+      <div class="service-item reveal">
+        <div class="preced-direita">
+          <div class="foto1"></div>
+          <div class="service-info">
+            <div class="service-top">
+              <div class="service-left">
+                <div class="service-name">Design Beauty Personalizado <span class="tag-popular">Mais agendado</span>
+                </div>
+                <p class="service-desc">Técnica perfeita para manter o olhar elegante e delicado, realçando a sua beleza
+                  natural.</p>
+                <span class="service-meta">40 min · Procedimento personalizado</span>
+              </div>
+              <div class="service-price">R$ 40,00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-item reveal">
+        <div class="preced-esquerda">
+          <div class="foto5"></div>
+          <div class="service-info">
+            <div class="service-top">
+              <div class="service-left">
+                <div class="service-name">Lash Lifting</div>
+                <p class="service-desc">Cílios curvados e levantados, proporcionando um efeito delicado e prático para o
+                  dia a dia. Pode usar rímel. Home care incluso.</p>
+                <span class="service-meta">2h · Durabilidade: 45 a 60 dias · Home care incluso</span>
+              </div>
+              <div class="service-price">R$ 120,00</div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="service-item reveal">
+        <div class="preced-direita">
+          <div class="foto4"></div>
+          <div class="service-info">
+            <div class="service-top">
+              <div class="service-left">
+                <div class="service-name">Brow Lamination</div>
+                <p class="service-desc">Para quem gosta do efeito up nas sobrancelhas. Volumosas, alinhadas e com
+                  resultado natural. Incluso home care.</p>
+                <span class="service-meta">1h30 · Manutenção: 45 a 60 dias · Home care incluso</span>
+              </div>
+              <div class="service-price">R$ 110,00</div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="featured-cta">
+        <a href="procedimentos.html" class="btn-outline">
+          <span>Ver todos os procedimentos</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- PAGAMENTO -->
+  <section id="pagamento" aria-label="Formas de pagamento">
+    <div class="section-inner narrow" style="text-align:center;">
+      <span class="label-line reveal" style="margin:0 auto 14px;"></span>
+      <span class="label reveal">Formas de Pagamento</span>
+      <h2 class="reveal" style="margin-top:16px;">Dinheiro, Cartões e Pix.</h2>
+      <div class="pagamento-grid">
+        <div class="pagamento-item reveal">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B5C3A" stroke-width="1.2"
+            stroke-linecap="round">
+            <rect x="2" y="5" width="20" height="14" rx="2" />
+            <line x1="2" y1="10" x2="22" y2="10" />
+          </svg>
+          <p class="pagamento-label">Cartão</p>
+          <p class="pagamento-desc">Débito e crédito. Uma pequena taxa da maquininha pode ser aplicada — você pode pedir
+            para simular antes.</p>
+        </div>
+        <div class="pagamento-item reveal">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B5C3A" stroke-width="1.2"
+            stroke-linecap="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            <path d="M2 17l10 5 10-5" />
+            <path d="M2 12l10 5 10-5" />
+          </svg>
+          <p class="pagamento-label">Pix</p>
+          <p class="pagamento-desc">CNPJ: 59.455.166/0001-45<br>Ester Prata Bastos Soares</p>
+        </div>
+        <div class="pagamento-item reveal">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B5C3A" stroke-width="1.2"
+            stroke-linecap="round">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="12" y1="8" x2="12" y2="12" />
+            <line x1="12" y1="16" x2="12.01" y2="16" />
+          </svg>
+          <p class="pagamento-label">Dinheiro</p>
+          <p class="pagamento-desc">Pagamento em espécie aceito para todos os procedimentos e produtos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- LOCAL -->
+  <section id="local" aria-label="Localização">
+    <div class="section-inner">
+      <span class="label-line reveal"></span>
+      <h2 class="reveal" style="margin-top:16px;">Localização</h2><br>
+      <div class="maps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7327.778286820492!2d-46.2282361!3d-23.319780599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce81c787e8cd05%3A0xef1b0789de13d46d!2sAv.%20da%20Republica%2C%20386A%20-%20Jardim%20Monte%20Serrat%2C%20Santa%20Isabel%20-%20SP%2C%2007500-000!5e0!3m2!1spt-BR!2sbr!4v1782431516575!5m2!1spt-BR!2sbr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- FOOTER -->
+  <footer id="contatos">
+    <div class="footer-inner">
+      <div>
+        <span class="footer-brand-name">Ester Sobrancelhas</span>
+        <span class="footer-sub">Brow Design · Santa Isabel, SP</span>
+      </div>
+      <div class="footer-nav">
+        <span class="footer-nav-title">Navegação</span>
+        <a href="index.html">Início</a>
+        <a href="procedimentos.html">Procedimentos</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="#contatos">Contatos</a>
+      </div>
+      <div>
+        <a href="https://maps.app.goo.gl/1htjmqjbZmZFP3qn6?g_st=ic" class="footer-address" target="_blank"
+          rel="noopener">
+          Av. da República, 386 A<br>Centro · Santa Isabel, SP
+        </a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/estersobrancelhaas?igsh=am1hY3pqaXh1bGdt&utm_source=qr"
+          class="footer-ig-link" target="_blank" rel="noopener" aria-label="Instagram da Ester Sobrancelhas">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#8B5C3A" stroke-width="1.2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="0.8" fill="#8B5C3A" stroke="none" />
+          </svg>
+          <span class="footer-ig-handle">@estersobrancelhaas</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="ano"></span> Ester Sobrancelhas | Todos os direitos reservados</p>
+
+      <script>
+        document.getElementById('ano').textContent = new Date().getFullYear();
+      </script>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <div id="whatsapp-float" aria-label="Agendar via WhatsApp">
+    <a href="https://wa.me/5511995281516?text=Ol%C3%A1%2C%20Ester%21%20Encontrei%20seu%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio."
+      target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+      <div class="wa-pulse-ring"></div>
+      <span class="wa-tooltip">Agendar via WhatsApp</span>
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="#F5F1EC" aria-hidden="true">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+    </a>
+  </div>
+
+  <!-- CARRINHO -->
+  <div id="cart-float" aria-label="Carrinho de agendamento">
+    <button id="cart-btn" aria-label="Abrir carrinho de agendamento">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#F5F1EC" stroke-width="1.4" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4" />
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <path d="M16 10a4 4 0 01-8 0" />
+      </svg>
+      <span class="cart-count" id="cart-count">0</span>
+    </button>
+  </div>
+
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <div class="cart-panel" id="cart-panel" role="dialog" aria-modal="true" aria-label="Seu carrinho de agendamento">
+    <div class="cart-panel-header">
+      <h3>Seu Agendamento</h3>
+      <button id="cart-close" aria-label="Fechar carrinho">&#215;</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <p class="cart-empty">Seu carrinho está vazio.<br>Adicione procedimentos ou produtos para agendar.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total estimado</span>
+        <span id="cart-total">R$ 0,00</span>
+      </div>
+      <a href="procedimentos.html" class="btn-outline" style="text-align:center;">
+        <span>Ver procedimentos</span>
+      </a>
+      <button id="cart-finish" class="btn-filled">Finalizar Agendamento</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
