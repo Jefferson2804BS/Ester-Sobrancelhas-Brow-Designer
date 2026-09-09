@@ -48,6 +48,36 @@ h3 { font-size: clamp(17px, 2.2vw, 21px); font-weight: 600; }
 .hamburger span { display: block; width: 24px; height: 1px; background: var(--light); transition: background 0.35s ease; }
 #nav.scrolled .hamburger span { background: var(--copper); }
 
+/* NAV — links do desktop (a única navegação entre páginas antes ficava presa dentro do menu
+   mobile, que só abre pelo hamburger — e o hamburger fica escondido no desktop. Resultado:
+   no desktop não existia nenhum jeito de navegar entre as páginas. Isso adiciona uma barra
+   de links visível a partir de 769px, e o hamburger/menu mobile continuam exclusivos do mobile. */
+.nav-brand-group { display: flex; align-items: center; gap: 12px; }
+.nav-links { display: flex; align-items: center; gap: 26px; }
+.nav-links a { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 13px; letter-spacing: 0.03em; color: var(--light); text-decoration: none; position: relative; padding-bottom: 2px; white-space: nowrap; transition: color 0.35s ease; }
+.nav-links a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: var(--light); transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease, background 0.35s ease; }
+.nav-links a:hover::after, .nav-links a.active::after { transform: scaleX(1); }
+.nav-links a.active { color: var(--gold); }
+#nav.scrolled .nav-links a { color: var(--text); }
+#nav.scrolled .nav-links a::after { background: var(--copper); }
+#nav.scrolled .nav-links a.active { color: var(--copper); }
+.nav-right { display: flex; align-items: center; gap: 28px; }
+
+@media (min-width: 769px) {
+  #nav { max-width: 980px; padding: 20px 40px; }
+}
+
+/* faixa estreita de desktop/tablet — aperta os espaçamentos pra tudo continuar cabendo numa linha só */
+@media (min-width: 769px) and (max-width: 900px) {
+  #nav { padding: 18px 24px; }
+  .nav-brand-group { gap: 8px; }
+  .nav-brand:nth-of-type(2) { font-size: 11px; }
+  .nav-links { gap: 14px; }
+  .nav-links a { font-size: 12px; }
+  .nav-right { gap: 16px; }
+  .nav-cta { font-size: 12px; }
+}
+
 .mobile-menu { position: fixed; inset: 0; background: var(--bg); z-index: 200; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 36px; transform: translateX(100%); transition: transform 0.4s cubic-bezier(0.77,0,0.175,1); }
 .mobile-menu.open { transform: translateX(0); }
 .mobile-menu a { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 30px; color: var(--text); text-decoration: none; opacity: 0; transform: translateY(16px); transition: opacity 0.3s ease, transform 0.3s ease, color 0.2s; }
@@ -285,6 +315,24 @@ section { padding: 100px 48px; }
 .service-desc { font-size: 14px; line-height: 1.65; color: var(--muted); margin-bottom: 8px; }
 .service-meta { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 11px; letter-spacing: 0.13em; text-transform: uppercase; color: var(--copper); opacity: 0.7; }
 .service-price { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 24px; color: var(--copper); white-space: nowrap; transition: color 0.3s ease; padding-top: 4px; }
+
+/* COMBOS — usam a mesma estrutura .preced-direita/.preced-esquerda dos procedimentos,
+   mas com duas fotos lado a lado (os dois procedimentos que compõem o combo) no lugar de uma só. */
+.combo-photos {
+  width: 45%;
+  flex-shrink: 0;
+  min-height: 180px;
+  display: flex;
+  background-color: var(--bg-alt);
+}
+.combo-photo {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg-alt);
+}
+.combo-photo:first-child { border-right: 2px solid #fff; }
+
 .services-cta-strip { background: var(--copper); padding: 60px 48px; text-align: center; }
 .services-cta-strip p { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 28px; color: var(--light); margin-bottom: 28px; }
 
@@ -489,6 +537,7 @@ footer {
   #nav { padding: 16px 20px; }
   .nav-brand:nth-of-type(2) { font-size: 11px; }
   .nav-cta { display: none; }
+  .nav-links { display: none; }
   .hamburger { display: flex; }
   section { padding: 64px 24px; }
   .hero-sub { max-width: 100%; }
@@ -510,12 +559,11 @@ footer {
 
   /* PROCEDIMENTOS: foto em cima, texto abaixo, sempre em coluna no mobile */
   .preced-direita, .preced-esquerda { flex-direction: column; max-width: 100%; }
-  .foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8 { width: 100%; min-height: 200px; }
+  .foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8, .combo-photos { width: 100%; min-height: 200px; }
   .preced-direita .service-info, .preced-esquerda .service-info { width: 100%; padding: 20px; }
   .service-info { flex-direction: column; align-items: flex-start; gap: 12px; }
   .service-left { padding-right: 0; }
   .service-price { align-self: flex-start; }
-
   .produto-item { flex-direction: column; align-items: center; text-align: center; }
   .pagamento-grid { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr 1fr; text-align: center; gap: 28px; }

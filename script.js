@@ -48,10 +48,12 @@ const revealEls = document.querySelectorAll('.reveal');
 const labelLines = document.querySelectorAll('.label-line');
 const timelineLine = document.getElementById('timeline-line');
 
-// Stagger children within each section
+// Stagger children within each section (limitado a 350ms — em seções com muitos itens,
+// como Procedimentos depois dos combos, esse atraso crescia sem limite e passava de 2s,
+// deixando a revelação do conteúdo com aparência de travada)
 document.querySelectorAll('section').forEach(section => {
   section.querySelectorAll('.reveal').forEach((child, i) => {
-    if (!child.dataset.delay) child.dataset.delay = i * 110;
+    if (!child.dataset.delay) child.dataset.delay = Math.min(i * 110, 350);
   });
 });
 
